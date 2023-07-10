@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Inter', sans-serif;
+
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    height: 5rem;
+    width: 100vw;
+    background-color: #DDA0DD;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 5rem;
+}
+
+/*Styling logo*/
+.logo{
+    padding:1vh 1vw;
+    text-align: left;
+}
+.logo img {
+    height: 5rem;
+    width: 5rem;
+}
+
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+
+.nav-links li {
+    position: relative;
+}
+.nav-links li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before{
+    width: 80%;
+}
+
+/*Styling Buttons*/
+.login-button{
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.login-button:hover {
+    color: #131418;
+    background-color: #f2f5f7;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+/* Hero section */
+
+.hero_section{
+   height: 100vh;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.hero_section p, h1, button{
+    color: #131418;
+}
+h1{
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+}
+
+.hero_image{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 250px;
+}
+.hero_image img{
+    height: 400px;
+    width: 400px;
+}
+.hero_text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    float:left;
+    justify-content: center;
+}
+.hero_text{
+    display: flex;
+    align-items: center;
+}
+.hero_buttons{
+    display: flex;
+    gap:  20px;
+}
+.btn{
+    padding: 22px;
+    width: 150px;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.primary{
+    background-color: pink;
+}
+.secondary{
+    background-color: palevioletred
+}
+.featurecontainer{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.sectionone_container{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    align-items: center;
+}
+.feature2_container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px;
+
+}
+.feature2_content{
+    background-color: pink;
+    border-radius: 5px;
+    height: 250px;
+    width: 250px;
+    
+}
+.testimonies_container{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonies_container h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.testimonies_content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 90px;
+    margin-right: auto;
+    justify-content: space-around;
+    
+}
+.testimonies_content h3, h4{
+    text-align: left;
+}
+
+.testimonies_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonies_image{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+.testimonies_content,
+.testimonies_image {
+  flex: 1;
+  justify-content: center;
+}
+
+/* Add the following styles at the end of your CSS code */
+
+/* Styling for the footer */
+footer {
+    background-color: #DDA0DD;
+    padding: 20px;
+    color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling for the logo */
+  .logo img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  /* Styling for the navigation menu in the footer */
+  footer nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  footer nav ul li {
+    margin-right: 10px;
+  }
+  
+  footer nav ul li a {
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+  }
+  
+  /* Styling for the social media icons in the footer */
+  .social-media-icons a {
+    color: black;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-left: auto;
+
+  }
+  .social-media-icons{
+    justify-items: right;
+    
+  }
+  
+  
+  
+
+
+
+
+
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: #DDA0DD;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
